@@ -53,7 +53,7 @@ Quick Sort - O(n log n)
 4. Click “Start Race”, wait for it to process, then watch the video of your two chosen algorithms sorting the same array.
 5. You can watch which one is faster, and visualize the differences between how these sorting algorithms work.
 
-Hugging Face Link 
+## Hugging Face Link 
 https://huggingface.co/spaces/AdamShafr/sorting-race
 
 ## Author & Acknowledgment
