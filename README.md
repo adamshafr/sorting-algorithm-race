@@ -7,15 +7,15 @@ For the purposes of this assignment, all problem breakdown, computational thinki
 ## Demo video/gif/screenshot of test
 
 ## Test Case 1: Quick Sort Vs Merge Sort (with small custom array) (Slow and detailed):
-             Refer to GIF_1 in files
+![GIF_1](https://github.com/user-attachments/assets/57d829df-19e8-438f-8f5d-54e28dbb0385)
 
 ## Test Case 2: Quick Sort Vs Merge sort (with big generated array) (faster):
-             Refer to GIF_2
+![GIF_2](https://github.com/user-attachments/assets/2b59d711-2c86-405a-b25e-6b8f21b0d082)
+
 
 ## Test Case 3: Quick Sort Vs Selection sort (with many duplicates):
-             Refer to GIF_3
+![GIF_3](https://github.com/user-attachments/assets/d8dbb7ee-8f6f-4703-8503-fcf7bd4f2930)
 
-Gifs do not appear in this version of the readme
 
 
 ## Problem Breakdown & Computational Thinking 
@@ -35,7 +35,8 @@ The app also includes other sorting algorithms for comparison, but the following
   The overall flow of the program can be described as: input -> sorting -> visualization -> output. The user begins by entering a list or selecting a size for a random array. The program validates the input and then starts the Median-of-Three Quicksort process. For each subarray, it picks a pivot by taking the median of the first, middle, and last elements. That pivot is moved to the end, and the algorithm scans through the range, comparing each element to the pivot and swapping when needed. These actions are recorded as frames for the animation. Once the pivot is placed in its correct position, the left and right halves of the array are added to a stack to be sorted next, repeating the same steps until the entire array is sorted. After finishing, the program adds a short completion animation and then compiles all frames into a video, which is shown to the user through the Gradio interface. This structure keeps the logic simple and ensures the visualization matches the actual operations of the algorithm.
 
 ## Flowchart (For median of three + video generation):
-    (Image as Flowchart.png)
+<img width="672" height="888" alt="flowchart" src="https://github.com/user-attachments/assets/d8fa14af-cfc0-4914-8719-f7f2042e3d6e" />
+
 
 
 Time complexity of Algorithms:
@@ -56,5 +57,7 @@ Hugging Face Link
 https://huggingface.co/spaces/AdamShafr/sorting-race
 
 ## Author & Acknowledgment
-
+This project was created by Adam Shafronsky for the Sorting Visualization assignment.
+I wrote all core code for the sorting algorithms and implemented the overall logic of the visualizer.
+AI tools were used to assist with parts of the UI and frame-generation structure, but all tuning, optimization, debugging, and final refinements to ensure the program works efficiently and appears visually polished were done by me.
 
