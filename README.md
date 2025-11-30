@@ -39,12 +39,12 @@ The app also includes other sorting algorithms for comparison, but the following
 
 
 
-Time complexity of Algorithms:
-Insertion Sort - O(n2)
-Bubble Sort - O(n2)
-Selection Sort - O(n2)
-Merge Sort - O(n log n)
-Quick Sort - O(n log n)
+## Time complexity of Algorithms:
+    Insertion Sort - O(n2)
+    Bubble Sort - O(n2)
+    Selection Sort - O(n2)
+    Merge Sort - O(n log n)
+    Quick Sort - O(n log n)
 
 ## Steps to Run
 1. Go to the Hugging Face link below.
