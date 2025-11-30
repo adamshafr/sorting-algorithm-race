@@ -5,29 +5,38 @@ I chose Quicksort originally because it is my favorite sorting algorithm, I feel
 For the purposes of this assignment, all problem breakdown, computational thinking, and algorithm explanation will focus only on the Median of Three Quicksort.
 
 ## Demo video/gif/screenshot of test
-Test Case 1: Quick Sort Vs Merge Sort (with small custom array) (Slow and detailed):
+
+## Test Case 1: Quick Sort Vs Merge Sort (with small custom array) (Slow and detailed):
              Refer to GIF_1 in files
-Test Case 2: Quick Sort Vs Merge sort (with big generated array) (faster):
+
+## Test Case 2: Quick Sort Vs Merge sort (with big generated array) (faster):
              Refer to GIF_2
-Test Case 3: Quick Sort Vs Selection sort (with many duplicates):
+
+## Test Case 3: Quick Sort Vs Selection sort (with many duplicates):
              Refer to GIF_3
 
-###Gifs do not appear in this version of the readme
+Gifs do not appear in this version of the readme
 
 
 ## Problem Breakdown & Computational Thinking 
 The algorithm is: Quicksort (Median of Three)
 The app also includes other sorting algorithms for comparison, but the following analysis focuses on the Median of Three Quicksort.
 
-Decomposition
-To solve this problem, I broke it down into several smaller steps. First, the program needs to accept input from the user, either as a custom comma separated list or as a randomly generated list of integers. This input must be validated and converted into a usable Python list. Next, the Quicksort (Median of Three) algorithm is applied to the array, but in small stages: selecting the pivot, partitioning the current range, swapping elements when necessary, and then sorting the left and right subranges. At the same time, the visualization system captures key actions such as comparisons and swaps so the user can see how the algorithm behaves. Finally, after the sorting is complete, the app assembles all of the recorded frames into a video and displays it in the Gradio interface. Breaking the program into these steps made it easier to implement, test, and improve.
-Pattern Recognition
-Quicksort works through clear patterns that repeat throughout the entire process. Each section of the array follows the exact same structure: choose a pivot, compare all elements to the pivot, swap elements when needed, and then split the problem into two smaller subproblems. This pattern continues until all sections reach a size of one. The Median-of-Three strategy also follows a repeating pattern of comparing the first, middle, and last elements to pick the pivot. From a visualization standpoint, the animation highlights these patterns clearly as comparisons appear as repeated color flashes, and swaps appear regularly whenever a smaller element needs to be moved to the left side. Recognizing these patterns helped guide both the code and the visual design.
-Abstraction
-To keep the visualization easy to follow, I focused only on the key parts of the sorting process that matter most to understanding the algorithm. The animation shows comparisons, swaps, pivot selection, and the gradual progression toward a sorted array. Details such as index arithmetic, stack operations, and low-level Python behavior are intentionally hidden because they would clutter the visualization and distract from the main idea. When building the project, I originally focused on making just one sorting algorithm work correctly (the Median of Three Quicksort). I got that core algorithm working first, verified it, and then focused on the animation and visualization layer afterward. Once everything worked smoothly for one algorithm, it became very easy to add additional sorting algorithms later since the visual system was already designed.
-Algorithm Design
-The overall flow of the program can be described as: input -> sorting -> visualization -> output. The user begins by entering a list or selecting a size for a random array. The program validates the input and then starts the Median-of-Three Quicksort process. For each subarray, it picks a pivot by taking the median of the first, middle, and last elements. That pivot is moved to the end, and the algorithm scans through the range, comparing each element to the pivot and swapping when needed. These actions are recorded as frames for the animation. Once the pivot is placed in its correct position, the left and right halves of the array are added to a stack to be sorted next, repeating the same steps until the entire array is sorted. After finishing, the program adds a short completion animation and then compiles all frames into a video, which is shown to the user through the Gradio interface. This structure keeps the logic simple and ensures the visualization matches the actual operations of the algorithm.
-Flowchart (For median of three + video generation):
+## Decomposition:
+  To solve this problem, I broke it down into several smaller steps. First, the program needs to accept input from the user, either as a custom comma separated list or as a randomly generated list of integers. This input must be validated and converted into a usable Python list. Next, the Quicksort (Median of Three) algorithm is applied to the array, but in small stages: selecting the pivot, partitioning the current range, swapping elements when necessary, and then sorting the left and right subranges. At the same time, the visualization system captures key actions such as comparisons and swaps so the user can see how the algorithm behaves. Finally, after the sorting is complete, the app assembles all of the recorded frames into a video and displays it in the Gradio interface. Breaking the program into these steps made it easier to implement, test, and improve.
+
+## Pattern Recognition:
+  Quicksort works through clear patterns that repeat throughout the entire process. Each section of the array follows the exact same structure: choose a pivot, compare all elements to the pivot, swap elements when needed, and then split the problem into two smaller subproblems. This pattern continues until all sections reach a size of one. The Median-of-Three strategy also follows a repeating pattern of comparing the first, middle, and last elements to pick the pivot. From a visualization standpoint, the animation highlights these patterns clearly as comparisons appear as repeated color flashes, and swaps appear regularly whenever a smaller element needs to be moved to the left side. Recognizing these patterns helped guide both the code and the visual design.
+
+## Abstraction:
+  To keep the visualization easy to follow, I focused only on the key parts of the sorting process that matter most to understanding the algorithm. The animation shows comparisons, swaps, pivot selection, and the gradual progression toward a sorted array. Details such as index arithmetic, stack operations, and low-level Python behavior are intentionally hidden because they would clutter the visualization and distract from the main idea. When building the project, I originally focused on making just one sorting algorithm work correctly (the Median of Three Quicksort). I got that core algorithm working first, verified it, and then focused on the animation and visualization layer afterward. Once everything worked smoothly for one algorithm, it became very easy to add additional sorting algorithms later since the visual system was already designed.
+
+## Algorithm Design:
+  The overall flow of the program can be described as: input -> sorting -> visualization -> output. The user begins by entering a list or selecting a size for a random array. The program validates the input and then starts the Median-of-Three Quicksort process. For each subarray, it picks a pivot by taking the median of the first, middle, and last elements. That pivot is moved to the end, and the algorithm scans through the range, comparing each element to the pivot and swapping when needed. These actions are recorded as frames for the animation. Once the pivot is placed in its correct position, the left and right halves of the array are added to a stack to be sorted next, repeating the same steps until the entire array is sorted. After finishing, the program adds a short completion animation and then compiles all frames into a video, which is shown to the user through the Gradio interface. This structure keeps the logic simple and ensures the visualization matches the actual operations of the algorithm.
+
+## Flowchart (For median of three + video generation):
+    (Image as Flowchart.png)
+
 
 Time complexity of Algorithms:
 Insertion Sort - O(n2)
