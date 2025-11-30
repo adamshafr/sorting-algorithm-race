@@ -40,16 +40,16 @@ The app also includes other sorting algorithms for comparison, but the following
 
 
 ## Time complexity of Algorithms:
-    Insertion Sort - O(n2)
-    Bubble Sort - O(n2)
-    Selection Sort - O(n2)
+    Insertion Sort - O(n^2)
+    Bubble Sort - O(n^2)
+    Selection Sort - O(n^2)
     Merge Sort - O(n log n)
     Quick Sort - O(n log n)
 
 ## Steps to Run
 1. Go to the Hugging Face link below.
 2. Enter a custom array, or leave it empty and drag the slider to generate a random array of a certain size (100-1000)
-3. Pick two sorting algorithms to race (it is recommended not to pick one of the O(n2) algorithms for a huge dataset, as it will take a while to process, but it will not take too long).
+3. Pick two sorting algorithms to race (it is recommended not to pick one of the O(n^2) algorithms for a huge dataset, as it will take a while to process, but it will not take too long).
 4. Click “Start Race”, wait for it to process, then watch the video of your two chosen algorithms sorting the same array.
 5. You can watch which one is faster, and visualize the differences between how these sorting algorithms work.
 
